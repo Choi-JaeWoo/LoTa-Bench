@@ -236,47 +236,43 @@
         </div>
         
         <style>
-          .uniform-height {
-            display: flex; /* Flex container 설정 */
-            flex-direction: column; /* Children을 세로로 배치 */
+          .image-container {
+            display: flex; /* Flexbox를 사용해 이미지를 정렬합니다 */
+            align-items: center; /* 이미지를 세로 중앙에 배치합니다 */
+            justify-content: center; /* 이미지를 가로 중앙에 배치합니다 */
+            height: 200px; /* 또는 원하는 높이로 설정합니다 */
+            overflow: hidden; /* 컨테이너를 넘어서는 부분은 숨깁니다 */
           }
-          .uniform-height .content, .uniform-height figure {
-            flex: 1; /* content와 figure가 가능한 같은 공간 차지 */
-          }
-          img {
-            width: 100%; /* 이미지를 부모의 100% 너비로 설정 */
-            height: auto; /* 이미지 높이를 자동으로 설정하여 비율 유지 */
-            object-fit: cover; /* 이미지가 figure를 꽉 채우도록 설정 */
-          }
-          figure {
-            margin: 0; /* 기본 마진 제거 */
+          .image-container img {
+            height: 100%; /* 이미지의 높이를 컨테이너의 높이에 맞춥니다 */
+            width: auto; /* 이미지의 원래 비율을 유지합니다 */
           }
         </style>
         
         <div class="columns">
           <!-- In-Context Example Selection. -->
-          <div class="column uniform-height">
+          <div class="column">
             <h3 class="title is-4">In-Context Example Selection</h3>
             <div class="content">
               <p>
                 We explored three strategies for selecting in-context examples from the train set: Random Sampling, Task-Specific Sampling, and Semantic Similarity Sampling. We found that across all model sizes, Semantic Similarity Sampling showed superior performance, followed by Task-Specific Sampling, and lastly Random Sampling.
               </p>
             </div>
-            <figure class="has-text-centered">
+            <figure class="has-text-centered image-container">
               <img src="./static/images/ic_select.png" alt="Extension Experiment 1 Image">
               <figcaption>Subgoal success rate for different in-context example selection strategies on WAH-NL</figcaption>
             </figure>
           </div>
         
           <!-- Fine-tuning on Train Set. -->
-          <div class="column uniform-height">
+          <div class="column">
             <h3 class="title is-4">Fine-tuning on Train Set</h3>
             <div class="content">
               <p>
                 We conducted experiments to investigate the potential to improve planner performance through fine-tuning. We fine-tuned LLaMA 1 models using LoRA on the ALFRED train set and evaluated their performance in the same ALFRED domain. As depicted in the following figure, fine-tuning significantly improved performance.
               </p>
             </div>
-            <figure class="has-text-centered">
+            <figure class="has-text-centered image-container">
               <img src="./static/images/finetuning.png" alt="Experiment 2 Image">
               <figcaption>Success rate of fine-tuned planners on ALFRED</figcaption>
             </figure>
