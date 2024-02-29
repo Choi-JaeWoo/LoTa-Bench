@@ -118,12 +118,11 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/overview.png"/>
-      <h2 class="subtitle has-text-centered">
-        LoTa-Bench Overview
-      </h2>
+      <figure>
+        <img src="./static/images/overview.png" alt="LoTa-Bench Overview Image" style="max-width:100%;height:auto;">
+        <figcaption>LoTa-Bench Overview</figcaption>
+      </figure>
     </div>
-    
   </div>
 </section>
 
@@ -160,50 +159,56 @@
   <div class="container is-max-desktop">
     <!-- Benchmark Suites. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Benchmark Suites</h2>
-        <div class="content has-text-justified">
-          <p>
-            .
-          </p>
-          <figure>
-            <img src="./static/images/alfred_success.png" alt="Benchmark Suites Image" style="max-width:100%;height:auto;">
-            <figcaption>ALFRED: success example</figcaption>
-          </figure>
-          <figure>
-            <img src="./static/images/vh_success.png" alt="Benchmark Suites Image" style="max-width:100%;height:auto;">
-            <figcaption>WAH-NL: success example</figcaption>
-          </figure>
-<!-- 
+      <h2 class="title is-3">Benchmark Suites</h2>
+      <div class="content has-text-justified">
+        <p>
+          .
+        </p>
+        <figure>
           <img src="./static/images/alfred_success.png" alt="Benchmark Suites Image" style="max-width:100%;height:auto;">
-          <img src="./static/images/vh_success.png" alt="Benchmark Suites Image" style="max-width:100%;height:auto;"> -->
-        </div>
+          <figcaption>ALFRED: success example</figcaption>
+        </figure>
+        <figure>
+          <img src="./static/images/vh_success.png" alt="Benchmark Suites Image" style="max-width:100%;height:auto;">
+          <figcaption>WAH-NL: success example</figcaption>
+        </figure>
       </div>
     </div>
     <!--/ Benchmark Suites. -->
 
     <!-- Base Experiments. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Base Experiments</h2>
-        <div class="content has-text-justified">
-          <p>
-            .
-          </p>
-          <div class="columns">
-            <div class="column is-half">
-              <figure>
-                <img src="./static/images/alfred_llm_model.png" alt="Experiment 1 Image" style="max-width:100%;height:auto;">
-                <figcaption>ALFRED LLM Model: experiment overview</figcaption>
-              </figure>
-            </div>
-            <div class="column is-half">
-              <figure>
-                <img src="./static/images/wah_llm_model.png" alt="Experiment 2 Image" style="max-width:100%;height:auto;">
-                <figcaption>WAH LLM Model: experiment overview</figcaption>
-              </figure>
-            </div>
+      <h2 class="title is-3">Base Experiments</h2>
+      <div class="content has-text-justified">
+        <p>
+          .
+        </p>
+        <div class="columns is-centered">
+          <div class="content">
+            <figure>
+              <img src="./static/images/alfred_llm_model.png" alt="Experiment 1 Image" style="max-width:100%;height:auto;">
+              <figcaption>Baseline results on ALFRED</figcaption>
+            </figure>
           </div>
+          <div class="content">
+            <figure>
+              <img src="./static/images/wah_llm_model.png" alt="Experiment 2 Image" style="max-width:100%;height:auto;">
+              <figcaption>Baseline results on WAH-NL</figcaption>
+            </figure>
+          </div>
+
+          <!-- <div class="column is-half">
+            <figure>
+              <img src="./static/images/alfred_llm_model.png" alt="Experiment 1 Image" style="max-width:100%;height:auto;">
+              <figcaption>Baseline results on ALFRED</figcaption>
+            </figure>
+          </div>
+          <div class="column is-half">
+            <figure>
+              <img src="./static/images/wah_llm_model.png" alt="Experiment 2 Image" style="max-width:100%;height:auto;">
+              <figcaption>Baseline results on WAH-NL</figcaption>
+            </figure>
+          </div> -->
         </div>
       </div>
     </div>
@@ -211,38 +216,36 @@
 
     <!-- Extensions of Task Planner. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Extensions of Task Planner</h2>
-        <div class="content">
+      <h2 class="title is-3">Extensions of Task Planner</h2>
+      <div class="content">
 
-          <!-- In-Context Example Selection. -->
-          <h3 class="title is-4">In-Context Example Selection</h3>
-          <div class="content has-text-justified">
-            <p>
-              .
-            </p>
-          </div>
-          <!--/ In-Context Example Selection. -->
-
-          <!-- Feedback and Replanning. -->
-          <h3 class="title is-4">Feedback and Replanning</h3>
-          <div class="content has-text-justified">
-            <p>
-              .
-            </p>
-          </div>
-          <!--/ Feedback and Replanning. -->
-
-          <!-- Fine-tuning on Train Set. -->
-          <h3 class="title is-4">Fine-tuning on Train Set</h3>
-          <div class="content has-text-justified">
-            <p>
-              .
-            </p>
-          </div>
-          <!--/ Fine-tuning on Train Set. -->
-
+        <!-- In-Context Example Selection. -->
+        <h3 class="title is-4">In-Context Example Selection</h3>
+        <div class="content has-text-justified">
+          <p>
+            .
+          </p>
         </div>
+        <!--/ In-Context Example Selection. -->
+
+        <!-- Feedback and Replanning. -->
+        <h3 class="title is-4">Feedback and Replanning</h3>
+        <div class="content has-text-justified">
+          <p>
+            .
+          </p>
+        </div>
+        <!--/ Feedback and Replanning. -->
+
+        <!-- Fine-tuning on Train Set. -->
+        <h3 class="title is-4">Fine-tuning on Train Set</h3>
+        <div class="content has-text-justified">
+          <p>
+            .
+          </p>
+        </div>
+        <!--/ Fine-tuning on Train Set. -->
+
       </div>
     </div>
     <!--/ Extensions of Task Planner. -->
