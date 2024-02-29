@@ -154,15 +154,16 @@
         <h2 class="title is-3">Benchmark Suites</h2>
         <div class="content has-text-justified">
           <p>
-            To rigorously evaluate LLM-based task planners, we introduce a comprehensive evaluation framework, LoTa-Bench. The framework integrates three key components: a task planner, a dataset, and a simulator. Our baseline task planner leverages the in-context learning capabilities of large language models (LLMs). Then we offer two distinct dataset-simulator pairings: 1) the ALFRED dataset built on the AI2-THOR simulator, and 2) an extended version of the Watch-And-Help (WAH) dataset, named WAH-NL, incorporated with the VirtualHome simulator.          </p>
+            To rigorously evaluate LLM-based task planners, we introduce a comprehensive evaluation framework, LoTa-Bench. The framework integrates three key components: a task planner, a dataset, and a simulator. Our baseline task planner leverages the in-context learning capabilities of LLMs. Then we offer two distinct dataset-simulator pairings: 1) the ALFRED dataset built on the AI2-THOR simulator, and 2) an extended version of the Watch-And-Help (WAH) dataset, named WAH-NL, incorporated with the VirtualHome simulator. The following images depict samples where the LLM-based task planner, utilizing the GPT-3 175B model, has successfully planned and executed desired tasks within the simulator.
+          </p>
         </div>
         <figure class="has-text-centered">
           <img src="./static/images/alfred_success.png" alt="Benchmark Suites Image" style="max-width:100%;height:auto;">
-          <figcaption>ALFRED: success example</figcaption>
+          <figcaption>ALFRED and AI2-THOR: success example</figcaption>
         </figure>
         <figure class="has-text-centered">
           <img src="./static/images/vh_success.png" alt="Benchmark Suites Image" style="max-width:100%;height:auto;">
-          <figcaption>WAH-NL: success example</figcaption>
+          <figcaption>WAH-NL and VirtualHome: success example</figcaption>
         </figure>
       </div>
     </div>
@@ -173,7 +174,7 @@
         <h2 class="title is-3">Base Experiments</h2>
         <div class="content has-text-justified">
           <p>
-            .
+            We conducted experiments to measure the performance of the baseline LLM-based task planners by using the proposed benchmark. We tested various settings including LLMs in different model classes and sizes and the impact of the number of in-context examples. The following image shows the results on ALFRED and WAH-NL for different pre-trained LLMs.
           </p>
         </div>
         <div class="columns is-centered">
@@ -199,7 +200,7 @@
         <h2 class="title is-3">Extensions of Task Planner</h2>
         <div class="content has-text-justified">
           <p>
-            .
+            The primary merit of the proposed benchmark is that it allows faster and easier validation of new task planners. To demonstrate this, we explore some extensions (or improvements) of the base planner and validate them.
           </p>
         </div>
         <!-- In-Context Example Selection. -->
