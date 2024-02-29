@@ -158,11 +158,11 @@
           </p>
         </div>
         <figure class="has-text-centered">
-          <img src="./static/images/alfred_success.png" alt="Benchmark Suites Image" style="max-width:100%;height:auto;">
+          <img src="./static/images/alfred_success.png" alt="Benchmark Suite 1 Image" style="max-width:100%;height:auto;">
           <figcaption>ALFRED and AI2-THOR: success example</figcaption>
         </figure>
         <figure class="has-text-centered">
-          <img src="./static/images/vh_success.png" alt="Benchmark Suites Image" style="max-width:100%;height:auto;">
+          <img src="./static/images/vh_success.png" alt="Benchmark Suite 2 Image" style="max-width:100%;height:auto;">
           <figcaption>WAH-NL and VirtualHome: success example</figcaption>
         </figure>
       </div>
@@ -180,13 +180,13 @@
         <div class="columns is-centered">
           <div class="column is-half">
             <figure class="has-text-centered">
-              <img src="./static/images/alfred_llm_model.png" alt="Experiment 1 Image" style="max-width:100%;height:auto;">
+              <img src="./static/images/alfred_llm_model.png" alt="Base Experiment 1 Image" style="max-width:100%;height:auto;">
               <figcaption>Baseline results on ALFRED</figcaption>
             </figure>
           </div>
           <div class="column is-half">
             <figure class="has-text-centered">
-              <img src="./static/images/wah_llm_model.png" alt="Experiment 2 Image" style="max-width:100%;height:auto;">
+              <img src="./static/images/wah_llm_model.png" alt="Based Experiment 2 Image" style="max-width:100%;height:auto;">
               <figcaption>Baseline results on WAH-NL</figcaption>
             </figure>
           </div>
@@ -208,13 +208,13 @@
         <div class="columns">
           <div class="column is-half">
             <p>
-              ...
+              We explored three strategies for selecting in-context examples from the train set: Random Sampling, Task-Specific Sampling, and Semantic Similarity Sampling. We found that across all model sizes, Semantic Similarity Sampling showed superior performance, followed by Task-Specific Sampling, and lastly Random Sampling.
             </p>
           </div>
           <div class="column is-half">
             <figure class="has-text-centered">
-              <img src="./static/images/ic_select.png" alt="Experiment 2 Image" style="max-width:100%;height:auto;">
-              <figcaption>Baseline results on WAH-NL</figcaption>
+              <img src="./static/images/ic_select.png" alt="Extension Experiment 1 Image" style="max-width:100%;height:auto;">
+              <figcaption>Subgoal success rate for different in-context example selection strategies on WAH-NL</figcaption>
             </figure>
           </div>
         </div>
@@ -225,13 +225,13 @@
         <div class="columns">
           <div class="column is-half">
             <p>
-              ...
+              Adjusting the plan in response to the failure of the action is necessary for task planning in the wild. We investigated whether our LLM-based task planner can reflect feedback from action failure and replan appropriately. The qualitative results showing how the planner succeeded by replanning steps are shown in the following figure.
             </p>
           </div>
           <div class="column is-half">
             <figure class="has-text-centered">
-              <img src="./static/images/replanning.png" alt="Experiment 2 Image" style="max-width:100%;height:auto;">
-              <figcaption>Baseline results on WAH-NL</figcaption>
+              <img src="./static/images/replanning.png" alt="Extension Experiment 2 Image" style="max-width:100%;height:auto;">
+              <figcaption>Success case of replanning on ALFRED</figcaption>
             </figure>
           </div>
         </div>
@@ -241,13 +241,13 @@
         <div class="columns">
           <div class="column is-half">
             <p>
-              ...
+              We conducted experiments to investigate the potential to improve planner performance through fine-tuning. We fine-tuned LLaMA 1 models using LoRA on the ALFRED train set and evaluated their performance in the same ALFRED domain. As depicted in the following figure, fine-tuning significantly improved performance.
             </p>
           </div>
           <div class="column is-half">
             <figure class="has-text-centered">
-              <img src="./static/images/finetuning.png" alt="Experiment 2 Image" style="max-width:100%;height:auto;">
-              <figcaption>Baseline results on WAH-NL</figcaption>
+              <img src="./static/images/finetuning.png" alt="Experiment 3 Image" style="max-width:100%;height:auto;">
+              <figcaption>Success rate of fine-tuned planners on ALFRED</figcaption>
             </figure>
           </div>
         </div>
